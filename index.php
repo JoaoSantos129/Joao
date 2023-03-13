@@ -16,6 +16,12 @@ if (isset($_GET['action'])) {
         case 'snow' :
             snow($_GET['code']);
             break;
+        case 'login' :
+            login($_POST);
+            break;
+        case 'register' :
+            register($_POST);
+            break;
         default :
             lost();
     }
